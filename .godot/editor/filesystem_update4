@@ -1,2 +1,3 @@
 res://components/player/player.tscn
 res://components/player/player.gd
+res://scenes/main.tscn
