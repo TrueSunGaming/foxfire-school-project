@@ -1,9 +1,32 @@
-[gd_scene format=3 uid="uid://covg7plmf4vsg"]
+[gd_scene load_steps=2 format=3 uid="uid://covg7plmf4vsg"]
 
-[node name="Age" type="Control"]
-layout_mode = 3
+[ext_resource type="Script" path="res://components/ui/age/age.gd" id="1_okcst"]
+
+[node name="Age" type="MarginContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = -670.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_okcst")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="AgeLabel" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "Skip to Birthday"
+
+[connection signal="pressed" from="HBoxContainer/Button" to="." method="_on_button_pressed"]
