@@ -1,6 +1,6 @@
 class_name Trait extends Resource
 
-static var map: Dictionary = {}
+static var map := {}
 
 enum IncompatibleHandle {
 	NO_ADD,
