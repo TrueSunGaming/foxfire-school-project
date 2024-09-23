@@ -11,5 +11,4 @@ static var map: Dictionary = {}
 @export var description: String
 
 static func get_trait(id: String) -> Trait:
-	print(map)
 	return map.get(id)

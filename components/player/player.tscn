@@ -1,15 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://mrw8vqnb6fyf"]
+[gd_scene load_steps=4 format=3 uid="uid://mrw8vqnb6fyf"]
 
 [ext_resource type="Script" path="res://components/player/player.gd" id="1_1lwtw"]
+[ext_resource type="Texture2D" uid="uid://dm48y1l3nf4vm" path="res://components/player/player.png" id="2_5q2uq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3fwi"]
 radius = 32.0
 
 [node name="Player" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_1lwtw")
 
-[node name="Polygon2D" type="Polygon2D" parent="."]
-polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_5q2uq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_b3fwi")
@@ -19,7 +22,7 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 10.0
+wait_time = 600.0
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

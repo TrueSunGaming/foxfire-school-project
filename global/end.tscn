@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://cg01d0p113h80"]
+
+[ext_resource type="PackedScene" uid="uid://d1kxsgjuhlcsq" path="res://components/player/trait_system/trait_display/trait_display.tscn" id="1_p5fc4"]
+
+[node name="End" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "Life Summary"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+text = "You had a great life throughout the ages of 5-18. Here are the traits you have developed throughout that time:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_right = 30
+
+[node name="TraitDisplay" parent="MarginContainer" instance=ExtResource("1_p5fc4")]
+layout_mode = 2

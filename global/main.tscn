@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://1vd7nsamerub"]
+
+[ext_resource type="PackedScene" uid="uid://mrw8vqnb6fyf" path="res://components/player/player.tscn" id="1_cc31f"]
+[ext_resource type="PackedScene" uid="uid://dac0ygy8y5l2k" path="res://components/environment/environment.tscn" id="1_yc3md"]
+[ext_resource type="PackedScene" uid="uid://ctq84k5r75d1x" path="res://components/ui/ui.tscn" id="2_cim6s"]
+
+[node name="Main" type="Node2D"]
+
+[node name="SceneEnvironment" parent="." instance=ExtResource("1_yc3md")]
+
+[node name="Player" parent="." instance=ExtResource("1_cc31f")]
+
+[node name="UI" parent="." instance=ExtResource("2_cim6s")]

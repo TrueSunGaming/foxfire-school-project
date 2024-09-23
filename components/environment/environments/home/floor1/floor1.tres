@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EnvironmentData" load_steps=3 format=3 uid="uid://ddi2rjgpch24f"]
+
+[ext_resource type="PackedScene" uid="uid://bi4ly4nyqutvp" path="res://components/environment/environments/home/floor1/floor1.tscn" id="1_cj01o"]
+[ext_resource type="Script" path="res://components/environment/EnvironmentData.gd" id="1_dtp0c"]
+
+[resource]
+script = ExtResource("1_dtp0c")
+id = "floor1"
+scene = ExtResource("1_cj01o")

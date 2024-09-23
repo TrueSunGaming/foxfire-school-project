@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EnvironmentData" load_steps=3 format=3 uid="uid://ch8xrh7oh125s"]
+
+[ext_resource type="Script" path="res://components/environment/EnvironmentData.gd" id="1_hpecu"]
+[ext_resource type="PackedScene" uid="uid://barwe25wxk8ic" path="res://components/environment/environments/yard/yard.tscn" id="1_k364o"]
+
+[resource]
+script = ExtResource("1_hpecu")
+id = "yard"
+scene = ExtResource("1_k364o")

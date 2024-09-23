@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://3hm0osf1un7l"]
+
+[ext_resource type="Script" path="res://components/player/trait_system/Trait.gd" id="1_voukq"]
+
+[resource]
+script = ExtResource("1_voukq")
+id = "hydrophobia"
+name = "Hydrophobia"
+description = "Since you nearly drowned in the kitchen sink while you were young, you developed an extreme fear of water."
