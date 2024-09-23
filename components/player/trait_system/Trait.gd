@@ -13,7 +13,7 @@ enum IncompatibleHandle {
 		map[val] = self
 
 @export var name: String
-@export var description: String
+@export_multiline var description: String
 @export var incompatible: Array[String]
 @export var incompatible_handle: IncompatibleHandle
 
