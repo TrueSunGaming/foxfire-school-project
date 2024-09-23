@@ -1,13 +1,17 @@
-[gd_scene load_steps=5 format=4 uid="uid://barwe25wxk8ic"]
+[gd_scene load_steps=7 format=4 uid="uid://barwe25wxk8ic"]
 
 [ext_resource type="TileSet" uid="uid://cxxsrdqaemsfq" path="res://resources/tiles/tileset.tres" id="1_hm43o"]
 [ext_resource type="Script" path="res://components/environment/environments/yard/yard.gd" id="1_tf7f1"]
+[ext_resource type="Texture2D" uid="uid://d2wdonl2a6mrq" path="res://components/player/dad.png" id="3_04d15"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m48if"]
 size = Vector2(128, 16)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4k1mt"]
 size = Vector2(256, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wp27a"]
+size = Vector2(128, 256)
 
 [node name="yard" type="Node2D"]
 script = ExtResource("1_tf7f1")
@@ -27,6 +31,17 @@ shape = SubResource("RectangleShape2D_m48if")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MazeFinish"]
 position = Vector2(-1152, 544)
 shape = SubResource("RectangleShape2D_4k1mt")
+
+[node name="Dad" type="Sprite2D" parent="."]
+position = Vector2(-512, 1472)
+scale = Vector2(4, 4)
+texture = ExtResource("3_04d15")
+
+[node name="DadConversation" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DadConversation"]
+position = Vector2(-512, 1536)
+shape = SubResource("RectangleShape2D_wp27a")
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 [connection signal="body_entered" from="MazeFinish" to="." method="_on_maze_finish_body_entered"]
