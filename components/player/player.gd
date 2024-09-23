@@ -41,6 +41,8 @@ func skip_age() -> void:
 	_on_timer_timeout()
 
 func add_trait(id: String) -> void:
+	if has_trait(id): return
+	
 	traits.push_back(id)
 
 func remove_trait(id: String) -> void:
