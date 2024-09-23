@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://ru04yc8jaisj"]
+
+[ext_resource type="Script" path="res://components/player/trait_system/Trait.gd" id="1_4g16l"]
+
+[resource]
+script = ExtResource("1_4g16l")
+id = "artistic"
+name = "Artistic"
+description = "You find beauty in things other people find ugly or boring. You become fascinated with arts and everything about it."
+incompatible = Array[String]([])
+incompatible_handle = 0

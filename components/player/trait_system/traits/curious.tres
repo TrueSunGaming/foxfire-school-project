@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://biy1i1ggkj5kt"]
+
+[ext_resource type="Script" path="res://components/player/trait_system/Trait.gd" id="1_085cy"]
+
+[resource]
+script = ExtResource("1_085cy")
+id = "curious"
+name = "Curious"
+description = "You found the large maze in your yard and immediately had curiosities about where is came from."
+incompatible = Array[String]([])
+incompatible_handle = 0

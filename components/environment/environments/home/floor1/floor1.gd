@@ -21,11 +21,10 @@ func _on_sink_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
 	if refs.player.age >= 10: return
 	
-	refs.player.add_trait("hydrophobia")
+	refs.player.add_trait("hydrophobic")
 
 func _on_stove_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
 	if refs.player.age >= 10: return
 	
-	refs.dialogue.sequence_id = "stove_burn"
-	refs.player.add_trait("pyrophobia")
+	refs.dialogue.start_dialogue("stove_burn")

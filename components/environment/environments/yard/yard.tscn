@@ -45,3 +45,4 @@ shape = SubResource("RectangleShape2D_wp27a")
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]
 [connection signal="body_entered" from="MazeFinish" to="." method="_on_maze_finish_body_entered"]
+[connection signal="body_entered" from="DadConversation" to="." method="_on_dad_conversation_body_entered"]

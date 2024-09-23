@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=9 format=3 uid="uid://l7hbiod44vhy"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_65gqx"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_koyud"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_d47x6"]
+
+[sub_resource type="Resource" id="Resource_gw5tr"]
+script = ExtResource("2_koyud")
+speaker = "You"
+text = "Where did it come from?"
+trait_given = "curious"
+options = Array[ExtResource("3_d47x6")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_qymkd"]
+script = ExtResource("2_koyud")
+speaker = "Dad"
+text = "Well, back when I was a little boy,..."
+trait_given = ""
+options = Array[ExtResource("3_d47x6")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_hdr5i"]
+script = ExtResource("3_d47x6")
+name = "\"It's not boring!\""
+sequence_id = "home_beauty"
+
+[sub_resource type="Resource" id="Resource_ecoyd"]
+script = ExtResource("2_koyud")
+speaker = "Dad"
+text = "...my father and I worked together designing and building this maze to give some life to this boring old house."
+trait_given = ""
+options = Array[ExtResource("3_d47x6")]([SubResource("Resource_hdr5i")])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_j4rh1"]
+script = ExtResource("2_koyud")
+speaker = "Dad"
+text = "That's where it came from. Now go explore it and see what you find!"
+trait_given = ""
+options = Array[ExtResource("3_d47x6")]([])
+action_id = ""
+
+[resource]
+script = ExtResource("1_65gqx")
+id = "dad_lore"
+steps = Array[ExtResource("2_koyud")]([SubResource("Resource_gw5tr"), SubResource("Resource_qymkd"), SubResource("Resource_ecoyd"), SubResource("Resource_j4rh1")])

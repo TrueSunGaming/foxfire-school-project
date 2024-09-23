@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=6 format=3 uid="uid://fdd6750276g4"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_opi7b"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_rxejt"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_01mtj"]
+
+[sub_resource type="Resource" id="Resource_qs44k"]
+script = ExtResource("2_rxejt")
+speaker = "You"
+text = "It's not boring!"
+trait_given = "artistic"
+options = Array[ExtResource("3_01mtj")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_al3v5"]
+script = ExtResource("2_rxejt")
+speaker = "Dad"
+text = "Well yes, some people do find beauty in things others find boring. Maybe you could grow up and make things beautiful in the future!"
+trait_given = ""
+options = Array[ExtResource("3_01mtj")]([])
+action_id = ""
+
+[resource]
+script = ExtResource("1_opi7b")
+id = "home_beauty"
+steps = Array[ExtResource("2_rxejt")]([SubResource("Resource_qs44k"), SubResource("Resource_al3v5")])

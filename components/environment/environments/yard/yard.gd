@@ -11,3 +11,8 @@ func _on_maze_finish_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
 	
 	refs.player.add_trait("solver")
+
+func _on_dad_conversation_body_entered(body: Node2D) -> void:
+	if body != refs.player: return
+	
+	refs.dialogue.start_dialogue("maze_intro")

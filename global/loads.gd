@@ -2,10 +2,12 @@ extends Node
 
 const traits := [
 	"cook",
-	"hydrophobia",
-	"pyrophobia",
+	"hydrophobic",
+	"pyrophobic",
 	"lazy",
-	"solver"
+	"solver",
+	"curious",
+	"artistic"
 ]
 
 const environments := [
@@ -14,7 +16,10 @@ const environments := [
 ]
 
 const dialogue := [
-	"stove_burn"
+	"stove_burn",
+	"maze_intro",
+	"dad_lore",
+	"home_beauty"
 ]
 
 func _init() -> void:

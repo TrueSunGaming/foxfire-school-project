@@ -1,11 +1,11 @@
 [gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://xqhf3yf8710w"]
 
-[ext_resource type="Script" path="res://components/player/trait_system/Trait.gd" id="1_rcnn8"]
+[ext_resource type="Script" path="res://components/player/trait_system/Trait.gd" id="1_3yoic"]
 
 [resource]
-script = ExtResource("1_rcnn8")
-id = "pyrophobia"
-name = "Pyrophobia"
+script = ExtResource("1_3yoic")
+id = "pyrophobic"
+name = "Pyrophobic"
 description = "Since you nearly died of burns from stepping on a lit stove when you were young, you developed an extreme fear of fire."
 incompatible = Array[String](["cook"])
 incompatible_handle = 1
