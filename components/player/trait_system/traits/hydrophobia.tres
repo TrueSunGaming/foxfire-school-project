@@ -7,3 +7,5 @@ script = ExtResource("1_voukq")
 id = "hydrophobia"
 name = "Hydrophobia"
 description = "Since you nearly drowned in the kitchen sink while you were young, you developed an extreme fear of water."
+incompatible = Array[String](["cook"])
+incompatible_handle = 1

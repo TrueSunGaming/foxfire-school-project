@@ -2,6 +2,11 @@ class_name Trait extends Resource
 
 static var map: Dictionary = {}
 
+enum IncompatibleHandle {
+	NO_ADD,
+	REMOVE_OTHER
+}
+
 @export var id: String:
 	set(val):
 		id = val
@@ -9,6 +14,8 @@ static var map: Dictionary = {}
 
 @export var name: String
 @export var description: String
+@export var incompatible: Array[String]
+@export var incompatible_handle: IncompatibleHandle
 
 static func get_trait(id: String) -> Trait:
 	return map.get(id)

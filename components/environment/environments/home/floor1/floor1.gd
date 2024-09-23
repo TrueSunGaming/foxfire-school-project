@@ -22,11 +22,9 @@ func _on_sink_body_entered(body: Node2D) -> void:
 	if refs.player.age >= 10: return
 	
 	refs.player.add_trait("hydrophobia")
-	refs.player.remove_trait("cook")
 
 func _on_stove_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
 	if refs.player.age >= 10: return
 	
 	refs.player.add_trait("pyrophobia")
-	refs.player.remove_trait("cook")

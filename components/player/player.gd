@@ -43,6 +43,14 @@ func skip_age() -> void:
 func add_trait(id: String) -> void:
 	if has_trait(id): return
 	
+	var trait_obj := Trait.get_trait(id)
+	match trait_obj.incompatible_handle:
+		Trait.IncompatibleHandle.NO_ADD:
+			for i in trait_obj.incompatible: if has_trait(i): return
+		
+		Trait.IncompatibleHandle.REMOVE_OTHER:
+			for i in trait_obj.incompatible: remove_trait(i)
+	
 	traits.push_back(id)
 
 func remove_trait(id: String) -> void:
