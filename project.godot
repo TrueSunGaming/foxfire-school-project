@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 global="*res://global/global.gd"
 refs="*res://global/refs.gd"
 loads="*res://global/loads.gd"
+actions="*res://components/dialogue/actions.gd"
 
 [display]
 

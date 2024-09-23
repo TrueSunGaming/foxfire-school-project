@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=6 format=3 uid="uid://cykv66uio7cuy"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_f12dy"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_5ddiy"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_iwvnf"]
+
+[sub_resource type="Resource" id="Resource_7h3iw"]
+script = ExtResource("2_5ddiy")
+speaker = "You"
+text = "AAAAAAAAAA IT BURNS AAAAAAAAAA"
+trait_given = ""
+options = Array[ExtResource("3_iwvnf")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_25rud"]
+script = ExtResource("2_5ddiy")
+speaker = "You"
+text = "*crying*"
+trait_given = ""
+options = Array[ExtResource("3_iwvnf")]([])
+action_id = ""
+
+[resource]
+script = ExtResource("1_f12dy")
+id = "stove_burn"
+steps = Array[ExtResource("2_5ddiy")]([SubResource("Resource_7h3iw"), SubResource("Resource_25rud")])

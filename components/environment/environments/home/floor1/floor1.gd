@@ -27,4 +27,5 @@ func _on_stove_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
 	if refs.player.age >= 10: return
 	
+	refs.dialogue.sequence_id = "stove_burn"
 	refs.player.add_trait("pyrophobia")

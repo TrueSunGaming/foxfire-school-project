@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctq84k5r75d1x"]
+[gd_scene load_steps=3 format=3 uid="uid://ctq84k5r75d1x"]
 
 [ext_resource type="PackedScene" uid="uid://covg7plmf4vsg" path="res://components/ui/age/age.tscn" id="1_vbmuv"]
+[ext_resource type="PackedScene" uid="uid://culiuopnwtph1" path="res://components/dialogue/render/dialogue.tscn" id="2_bfu1c"]
 
 [node name="UI" type="CanvasLayer"]
 
 [node name="Age" parent="." instance=ExtResource("1_vbmuv")]
 offset_bottom = -471.0
+
+[node name="Dialogue" parent="." instance=ExtResource("2_bfu1c")]
