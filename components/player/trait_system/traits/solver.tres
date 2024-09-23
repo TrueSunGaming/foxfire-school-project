@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://dwdb1xtaar452"]
+
+[ext_resource type="Script" path="res://components/player/trait_system/Trait.gd" id="1_j6r88"]
+
+[resource]
+script = ExtResource("1_j6r88")
+id = "solver"
+name = "Problem Solver"
+description = "You enjoyed solving that maze, so you developed great problem solving skills and a love for thinking."

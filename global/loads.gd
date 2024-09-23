@@ -1,11 +1,11 @@
 extends Node
 
 const traits := [
-	"test",
 	"cook",
 	"hydrophobia",
 	"pyrophobia",
-	"lazy"
+	"lazy",
+	"solver"
 ]
 
 const environments := [
