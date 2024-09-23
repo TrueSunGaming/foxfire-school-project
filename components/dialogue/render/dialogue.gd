@@ -35,6 +35,8 @@ func update_content() -> void:
 	update_stream()
 	$PanelContainer/VBoxContainer/Speaker.text = step.speaker
 	for i in $PanelContainer/VBoxContainer/Options.get_children(): i.queue_free()
+	if Trait.map.has(step.trait_given): refs.player.add_trait(step.trait_given)
+	if actions.action_map.has(step.action_id): actions.action_map.get(step.action_id).call()
 
 func update_stream() -> void:
 	stream.reset()
