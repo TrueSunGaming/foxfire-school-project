@@ -1,10 +1,5 @@
 extends Node2D
 
-func _on_upstairs_body_entered(body: Node2D) -> void:
-	if body != refs.player: return
-	
-	refs.env.set_env("floor2")
-
 func _on_yard_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
 	if refs.env.time_since_switch < 0.1: return
