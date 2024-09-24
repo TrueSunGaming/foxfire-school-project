@@ -10,6 +10,10 @@ signal finished
 var age := 5
 var traits: Array[String] = []
 
+var maze_completed := false
+var kitchen_death_experience := false
+var kitchen_helped := false
+
 var trait_resources: Array[Trait]:
 	get:
 		var res: Array[Trait] = []

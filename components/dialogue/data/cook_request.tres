@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=8 format=3 uid="uid://66uule63ko2p"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_0eae4"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_cyyb0"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_fn6g1"]
+
+[sub_resource type="Resource" id="Resource_eqwwt"]
+script = ExtResource("2_cyyb0")
+speaker = "Mom"
+text = "I have to cook so much food!"
+trait_given = ""
+options = Array[ExtResource("3_fn6g1")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_qgd1p"]
+script = ExtResource("3_fn6g1")
+name = "\"How can I help?\""
+sequence_id = "cook_help"
+
+[sub_resource type="Resource" id="Resource_svdl2"]
+script = ExtResource("3_fn6g1")
+name = "Ignore her"
+sequence_id = ""
+
+[sub_resource type="Resource" id="Resource_5icny"]
+script = ExtResource("2_cyyb0")
+speaker = "Mom"
+text = "It's so much work and it's so tiring..."
+trait_given = ""
+options = Array[ExtResource("3_fn6g1")]([SubResource("Resource_qgd1p"), SubResource("Resource_svdl2")])
+action_id = ""
+
+[resource]
+script = ExtResource("1_0eae4")
+id = "cook_request"
+steps = Array[ExtResource("2_cyyb0")]([SubResource("Resource_eqwwt"), SubResource("Resource_5icny")])

@@ -25,7 +25,9 @@ const dialogue := [
 	"maze_finish",
 	"sink_drown",
 	"sink_apologize",
-	"sink_excuses"
+	"sink_excuses",
+	"cook_request",
+	"cook_help"
 ]
 
 func _init() -> void:

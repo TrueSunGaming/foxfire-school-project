@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=7 format=3 uid="uid://d2p736515xfpv"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_6dbnm"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_gdcnv"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_c8fde"]
+
+[sub_resource type="Resource" id="Resource_wb4hi"]
+script = ExtResource("2_gdcnv")
+speaker = "You"
+text = "How can I help?"
+trait_given = "helpful"
+options = Array[ExtResource("3_c8fde")]([])
+action_id = "help_kitchen"
+
+[sub_resource type="Resource" id="Resource_gl6gw"]
+script = ExtResource("2_gdcnv")
+speaker = "Mom"
+text = "You can wash these carrots in the sink. Thank you so much!"
+trait_given = ""
+options = Array[ExtResource("3_c8fde")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_bc0wh"]
+script = ExtResource("2_gdcnv")
+speaker = "You (thinking)"
+text = "Making food is so fun! I should learn more and do this in the future!"
+trait_given = "cook"
+options = Array[ExtResource("3_c8fde")]([])
+action_id = ""
+
+[resource]
+script = ExtResource("1_6dbnm")
+id = "cook_help"
+steps = Array[ExtResource("2_gdcnv")]([SubResource("Resource_wb4hi"), SubResource("Resource_gl6gw"), SubResource("Resource_bc0wh")])
