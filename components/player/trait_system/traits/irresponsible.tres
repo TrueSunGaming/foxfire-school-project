@@ -6,6 +6,6 @@
 script = ExtResource("1_bbypf")
 id = "irresponsible"
 name = "Irresponsible"
-description = ""
+description = "You frequently blame things on others instead of apologizing even though it was your own fault. Your parents are not happy with you."
 incompatible = Array[String](["responsible"])
 incompatible_handle = 1

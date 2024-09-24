@@ -1,5 +1,7 @@
 extends Node2D
 
+var maze_completed := false
+
 func _on_door_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
 	if refs.env.time_since_switch < 0.1: return
@@ -9,8 +11,10 @@ func _on_door_body_entered(body: Node2D) -> void:
 
 func _on_maze_finish_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
+	if maze_completed: return
 	
 	refs.dialogue.start_dialogue("maze_finish")
+	maze_completed = true
 
 func _on_dad_conversation_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
