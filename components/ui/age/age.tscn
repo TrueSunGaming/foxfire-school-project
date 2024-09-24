@@ -27,6 +27,7 @@ size_flags_horizontal = 0
 [node name="Button" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 2
+mouse_default_cursor_shape = 2
 text = "Skip to birthday"
 
 [connection signal="pressed" from="HBoxContainer/Button" to="." method="_on_button_pressed"]
