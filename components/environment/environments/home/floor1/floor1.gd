@@ -21,7 +21,7 @@ func _on_sink_body_entered(body: Node2D) -> void:
 	if body != refs.player: return
 	if refs.player.age >= 10: return
 	
-	refs.player.add_trait("hydrophobic")
+	refs.dialogue.start_dialogue("sink_drown")
 
 func _on_stove_body_entered(body: Node2D) -> void:
 	if body != refs.player: return

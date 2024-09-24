@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=11 format=3 uid="uid://cwhtkadgnq2ci"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_vjviy"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_7qe2n"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_3rryy"]
+
+[sub_resource type="Resource" id="Resource_otdxh"]
+script = ExtResource("2_7qe2n")
+speaker = "You"
+text = "AAA- *drowning sounds* HELP ME- "
+trait_given = ""
+options = Array[ExtResource("3_3rryy")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_fwxk2"]
+script = ExtResource("2_7qe2n")
+speaker = "Mom"
+text = "How did you fall in the sink?!?!?!?"
+trait_given = ""
+options = Array[ExtResource("3_3rryy")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_7b40v"]
+script = ExtResource("2_7qe2n")
+speaker = "Mom"
+text = "*pulls you out*"
+trait_given = ""
+options = Array[ExtResource("3_3rryy")]([])
+action_id = "pull_back"
+
+[sub_resource type="Resource" id="Resource_fgemg"]
+script = ExtResource("2_7qe2n")
+speaker = "You"
+text = "*catching your breath*"
+trait_given = "hydrophobic"
+options = Array[ExtResource("3_3rryy")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_qyj5x"]
+script = ExtResource("3_3rryy")
+name = "\"I didn't know...\""
+sequence_id = "sink_apologize"
+
+[sub_resource type="Resource" id="Resource_rs1lw"]
+script = ExtResource("3_3rryy")
+name = "\"Why weren't you watching me??\""
+sequence_id = "sink_excuses"
+
+[sub_resource type="Resource" id="Resource_cxfbl"]
+script = ExtResource("2_7qe2n")
+speaker = "Mom"
+text = "Why were you playing in the sink?!"
+trait_given = ""
+options = Array[ExtResource("3_3rryy")]([SubResource("Resource_qyj5x"), SubResource("Resource_rs1lw")])
+action_id = ""
+
+[resource]
+script = ExtResource("1_vjviy")
+id = "sink_drown"
+steps = Array[ExtResource("2_7qe2n")]([SubResource("Resource_otdxh"), SubResource("Resource_fwxk2"), SubResource("Resource_7b40v"), SubResource("Resource_fgemg"), SubResource("Resource_cxfbl")])

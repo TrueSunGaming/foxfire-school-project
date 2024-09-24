@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=7 format=3 uid="uid://rb5b8krqmbe5"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_3ya71"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_kpx1u"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_42opq"]
+
+[sub_resource type="Resource" id="Resource_mtqwm"]
+script = ExtResource("2_kpx1u")
+speaker = "You"
+text = "Sorry, Mom. I didn't know the sink could be so dangerous!"
+trait_given = "responsible"
+options = Array[ExtResource("3_42opq")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_io1uj"]
+script = ExtResource("2_kpx1u")
+speaker = "Mom"
+text = "Yes, the sink can be dangerous. Make sure you try not to fall in there again."
+trait_given = ""
+options = Array[ExtResource("3_42opq")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_hnusk"]
+script = ExtResource("2_kpx1u")
+speaker = "You"
+text = "Okay, Mom. I'll make sure to try not to fall in there again!"
+trait_given = ""
+options = Array[ExtResource("3_42opq")]([])
+action_id = ""
+
+[resource]
+script = ExtResource("1_3ya71")
+id = "sink_apologize"
+steps = Array[ExtResource("2_kpx1u")]([SubResource("Resource_mtqwm"), SubResource("Resource_io1uj"), SubResource("Resource_hnusk")])

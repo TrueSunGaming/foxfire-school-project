@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://dfn0w4kl5183t"]
+
+[ext_resource type="Script" path="res://components/player/trait_system/Trait.gd" id="1_bbypf"]
+
+[resource]
+script = ExtResource("1_bbypf")
+id = "irresponsible"
+name = "Irresponsible"
+description = ""
+incompatible = Array[String](["responsible"])
+incompatible_handle = 1

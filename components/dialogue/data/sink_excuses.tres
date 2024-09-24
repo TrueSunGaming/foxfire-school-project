@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=9 format=3 uid="uid://ddkd60m4dw86t"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_jvp5k"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_5k3ae"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_cy6yy"]
+
+[sub_resource type="Resource" id="Resource_ru5df"]
+script = ExtResource("2_5k3ae")
+speaker = "You"
+text = "Why weren't you watching me??"
+trait_given = "irresponsible"
+options = Array[ExtResource("3_cy6yy")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_c382k"]
+script = ExtResource("2_5k3ae")
+speaker = "Mom"
+text = "I was watching you!"
+trait_given = ""
+options = Array[ExtResource("3_cy6yy")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_1nlrm"]
+script = ExtResource("2_5k3ae")
+speaker = "Mom"
+text = "If I wasn't watching you, I wouldn't have saved you!"
+trait_given = ""
+options = Array[ExtResource("3_cy6yy")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_vppls"]
+script = ExtResource("2_5k3ae")
+speaker = "Mom"
+text = "Now, get out of the kitchen and go do something safer."
+trait_given = ""
+options = Array[ExtResource("3_cy6yy")]([])
+action_id = ""
+
+[sub_resource type="Resource" id="Resource_ou08w"]
+script = ExtResource("2_5k3ae")
+speaker = "Mom"
+text = "Kids these days..."
+trait_given = ""
+options = Array[ExtResource("3_cy6yy")]([])
+action_id = ""
+
+[resource]
+script = ExtResource("1_jvp5k")
+id = "sink_excuses"
+steps = Array[ExtResource("2_5k3ae")]([SubResource("Resource_ru5df"), SubResource("Resource_c382k"), SubResource("Resource_1nlrm"), SubResource("Resource_vppls"), SubResource("Resource_ou08w")])

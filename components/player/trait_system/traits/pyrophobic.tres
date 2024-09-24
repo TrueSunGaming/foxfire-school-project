@@ -6,6 +6,6 @@
 script = ExtResource("1_3yoic")
 id = "pyrophobic"
 name = "Pyrophobic"
-description = "Since you nearly died of burns from stepping on a lit stove when you were young, you developed an extreme fear of fire."
+description = "Since you nearly died of burns from touching a lit stove when you were young, you developed an extreme fear of fire."
 incompatible = Array[String](["cook"])
 incompatible_handle = 1

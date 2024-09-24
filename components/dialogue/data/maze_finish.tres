@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DialogueSequence" load_steps=5 format=3 uid="uid://cfsjw8kucoa75"]
+
+[ext_resource type="Script" path="res://components/dialogue/DialogueSequence.gd" id="1_h4w6r"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueStep.gd" id="2_jv0ja"]
+[ext_resource type="Script" path="res://components/dialogue/DialogueOption.gd" id="3_i8286"]
+
+[sub_resource type="Resource" id="Resource_ujbst"]
+script = ExtResource("2_jv0ja")
+speaker = "You"
+text = "Yay! I completed the maze!"
+trait_given = "solver"
+options = Array[ExtResource("3_i8286")]([])
+action_id = ""
+
+[resource]
+script = ExtResource("1_h4w6r")
+id = "maze_finish"
+steps = Array[ExtResource("2_jv0ja")]([SubResource("Resource_ujbst")])

@@ -7,7 +7,9 @@ const traits := [
 	"lazy",
 	"solver",
 	"curious",
-	"artistic"
+	"artistic",
+	"responsible",
+	"irresponsible"
 ]
 
 const environments := [
@@ -19,7 +21,11 @@ const dialogue := [
 	"stove_burn",
 	"maze_intro",
 	"dad_lore",
-	"home_beauty"
+	"home_beauty",
+	"maze_finish",
+	"sink_drown",
+	"sink_apologize",
+	"sink_excuses"
 ]
 
 func _init() -> void:

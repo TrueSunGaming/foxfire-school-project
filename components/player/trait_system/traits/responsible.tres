@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Trait" load_steps=2 format=3 uid="uid://c7ck1xbs18jpf"]
+
+[ext_resource type="Script" path="res://components/player/trait_system/Trait.gd" id="1_dctvx"]
+
+[resource]
+script = ExtResource("1_dctvx")
+id = "responsible"
+name = "Responsible"
+description = "You take responsibility for your actions and admit your mistakes. You apologize and try your best to not repeat the same mistake again."
+incompatible = Array[String](["irresponsible"])
+incompatible_handle = 1
